@@ -23,13 +23,25 @@ button#clear{
 }
 .counter{
   margin-left: 25%;
-  display: inline-block;
+  margin-right: 23.7%
+
 }
+th{
+  padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: black;
+    color: white;
+}
+td{
+    text-align: left;
+    padding: 8px;
+}
+
 #character{
-  width: 50%;
-  display: inline-block;
+  width: 10%;
+  text-align: center;
 }
 #word{
-  display: inline-block;
-  width: 50%;
+  width: 10%;
+  text-align: center;
 }

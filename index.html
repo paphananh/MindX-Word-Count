@@ -11,11 +11,17 @@
       <button id="copy" onclick="copy()">Copy</button>
       <button id="clear" onclick="clear()">Clear</button>
     </div>
-    <textarea type="text" id="typed"></textarea>
-    <div class="counter">
-      <p id="character"></p>
-      <p id="word"></p>
-    </div>
+    <textarea type="text" id="typed" placeholder="Hey, type something and i will count for you"></textarea>
+    <table class="counter">
+      <tr>
+        <th id="character"></th>
+        <th id="word"></th>
+      </tr>
+      <tr>
+        <td id="character">Characters</td>
+        <td id="word">Words</td>
+      </tr>
+    </table>
     <script>
     window.setInterval(function(){
     count();
