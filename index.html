@@ -29,7 +29,7 @@
     function count() {
       var input = document.getElementById("typed").value;
       var ccount = input.length;
-      var wcount = input.split(" ").length;
+      var wcount = input.split(" ").length -1;
       document.getElementById("character").innerHTML = ccount;
       document.getElementById("word").innerHTML = wcount;
     }
