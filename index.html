@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=vi dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/master.css">
+  </head>
+  <body>
+    <h1>Counter Box</h1>
+    <div class="button">
+      <button id="copy" onclick="copy()">Copy</button>
+      <button id="clear" onclick="clear()">Clear</button>
+    </div>
+    <textarea type="text" id="typed"></textarea>
+    <div class="counter">
+      <p id="character"></p>
+      <p id="word"></p>
+    </div>
+    <script>
+    window.setInterval(function(){
+    count();
+    }, 200);
+    function count() {
+      var input = document.getElementById("typed").value;
+      var ccount = input.length;
+      var wcount = input.split(" ").length;
+      document.getElementById("character").innerHTML = ccount;
+      document.getElementById("word").innerHTML = wcount;
+    }
+    function copy() {
+    var copyText = document.getElementById("typed");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    }
+    function clear() {
+      document.getElementById("typed").value = "";
+    }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,35 @@
+h1 {
+  text-align: center;
+}
+textarea#typed{
+  width: 50%;
+  height: 200px;
+  margin-left: 25%;
+}
+.button{
+  margin-left: 25%;
+  margin-bottom: 2%;
+}
+button{
+  border: none;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+button#clear{
+  margin-left:52.6%;
+}
+.counter{
+  margin-left: 25%;
+  display: inline-block;
+}
+#character{
+  width: 50%;
+  display: inline-block;
+}
+#word{
+  display: inline-block;
+  width: 50%;
+}
